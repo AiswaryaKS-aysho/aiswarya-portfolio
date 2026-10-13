@@ -133,7 +133,8 @@ function initHeroTerminal() {
 
   const commands = {
     help: () => `Available commands:
-  • webpent      : Run webpent vulnerability scanner details
+  • webpent      : Web App vulnerability scanner details
+  • apisec       : OpenAPI & REST security auditor details
   • whoami       : About Aiswarya K S
   • education    : Degree & University details
   • thm          : TryHackMe profile info
@@ -142,6 +143,19 @@ function initHeroTerminal() {
   • projects     : Featured project list
   • contact      : Contact & social links
   • clear        : Reset terminal screen`,
+
+    apisec: () => `[+] Tool: apisec-audit (OpenAPI & REST Security Auditor)
+Author: Aiswarya K S
+Standard: OWASP API Security Top 10 (2023)
+Checks:
+  • API2 Auth    : Missing security schemes, API keys in query, Basic auth
+  • API3 Data    : Sensitive response schemas & mass assignment properties
+  • API4 Limits  : Rate-limiting definitions & HTTP 429 status
+  • API7 Config  : Unencrypted HTTP servers & TLS misconfigurations
+  • API9 Inven.  : Deprecated endpoints & unversioned paths
+Usage:
+  python -m apisec sample_spec.json --md audit.md --fail-on high
+Repo: https://github.com/AiswaryaKS-aysho/apisec-audit`,
 
     webpent: () => `[+] Tool: webpent (Web App Pentest & Vulnerability Scanner)
 Author: Aiswarya K S

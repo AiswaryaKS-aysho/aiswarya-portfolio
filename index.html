@@ -656,31 +656,38 @@ Oct 13 03:12:10 debian-srv sshd[1429]: Failed password for invalid user test fro
           </div>
         </article>
 
-        <!-- Project 2 -->
-        <article class="project-card">
+        <!-- Project 2: apisec-audit -->
+        <article class="project-card" style="border-color: var(--border-highlight);">
           <div class="project-header-row">
-            <span class="project-cat-pill">Digital Forensics</span>
-            <span class="project-status-tag">Evidence Integrity</span>
+            <span class="project-cat-pill" style="color:var(--accent-violet); font-weight:700;">API SECURITY & AUDIT</span>
+            <span class="project-status-tag" style="background:rgba(139, 92, 246, 0.15); color:var(--accent-violet);">Python / OWASP</span>
           </div>
-          <h3 class="project-card-title">Evidence Hash & Chain of Custody Verifier</h3>
+          <h3 class="project-card-title">apisec-audit — OpenAPI & REST Security Auditor</h3>
           <p class="project-card-desc">
-            Automated forensic hashing utility that computes cryptographic hashes (MD5, SHA-1, SHA-256)
-            for raw forensic disk images (.dd/.raw) and records immutable acquisition metadata.
+            Automated API security posture and OpenAPI (v3) / Swagger (v2) specification auditor aligned with the <strong>OWASP API Security Top 10 (2023)</strong>. Evaluates local specs and live endpoints with Markdown, JSON, and CI/CD integration.
           </p>
           <div class="project-forensic-box">
-            <strong>Forensics Application:</strong>
-            Ensures adherence to ISO/IEC 27037 standards for digital evidence handling and courtroom admissibility.
+            <strong>Key Audit Checks:</strong>
+            • <strong>API2 Broken Auth:</strong> Missing security schemes, API keys in query params, Basic auth<br>
+            • <strong>API3 Data Exposure:</strong> PII/credential schema exposure & Mass Assignment properties<br>
+            • <strong>API4 Resource Exhaustion:</strong> Missing rate limiting definitions & HTTP 429 schemas<br>
+            • <strong>API7 Misconfig:</strong> Unencrypted plain HTTP endpoints & permissive transport<br>
+            • <strong>API9 Inventory:</strong> Deprecated endpoints & unversioned API routes
           </div>
           <div class="project-tech-pills">
-            <span class="tech-pill">Python</span>
-            <span class="tech-pill">Hashlib</span>
-            <span class="tech-pill">Evidence Handling</span>
-            <span class="tech-pill">CLI</span>
+            <span class="tech-pill">Python 3</span>
+            <span class="tech-pill">OpenAPI v3</span>
+            <span class="tech-pill">Swagger v2</span>
+            <span class="tech-pill">OWASP API 2023</span>
+            <span class="tech-pill">CI/CD Quality Gate</span>
           </div>
           <div class="project-card-actions">
-            <a href="https://github.com/AiswaryaKS-aysho" target="_blank" rel="noopener noreferrer" class="project-action-link">
-              GitHub Repo ↗
+            <a href="https://github.com/AiswaryaKS-aysho/apisec-audit" target="_blank" rel="noopener noreferrer" class="project-action-link" style="font-weight:700;">
+              View on GitHub ↗
             </a>
+            <span style="font-size:0.75rem; font-family:var(--font-mono); color:var(--text-dim); margin-left:auto;">
+              python -m apisec
+            </span>
           </div>
         </article>
 
