@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aiswarya K S — Junior Cybersecurity & Cyber Forensics Portfolio</title>
+  <meta name="description" content="Portfolio of Aiswarya K S, BSc Cyber Forensics student at Mahatma Gandhi University (2023-2026). Hands-on digital forensics, network security, packet analysis, and TryHackMe labs.">
+  <meta name="author" content="Aiswarya K S">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aiswarya K S | Cyber Forensics & Security Portfolio">
+  <meta property="og:description" content="BSc Cyber Forensics student at Mahatma Gandhi University. Explore projects, TryHackMe rooms, and interactive forensics labs.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- Ambient Aesthetic Glows -->
+  <div class="ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════ NAVIGATION ═══════════════════════════ -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Aiswarya K S Portfolio Home">
+        <div class="brand-icon">AKS</div>
+        <div class="brand-text">
+          <span class="brand-name">Aiswarya K S</span>
+          <span class="brand-role">Cyber Forensics · MGU</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#tryhackme" class="nav-link">TryHackMe</a></li>
+        <li><a href="#forensics-lab" class="nav-link">Forensics Lab</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- TryHackMe Direct Link Pill -->
+        <a href="https://tryhackme.com/p/aiswaryaks325" target="_blank" rel="noopener noreferrer" class="btn-thm-badge" title="Visit Aiswarya's TryHackMe Profile">
+          <span style="font-size: 0.9rem;">🔥</span> THM: @aiswaryaks325
+        </a>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme" title="Switch Theme">
+          <span id="themeIcon">☀️</span>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button class="nav-hamburger" id="navHamburger" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO SECTION ═══════════════════════════ -->
+  <header id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-bento-grid">
+        
+        <!-- Left: Editorial Intro -->
+        <div class="hero-intro">
+          <div class="hero-badge-row">
+            <div class="status-pill">
+              <span class="status-dot-pulse"></span>
+              Open to Cyber Forensics / SOC Analyst Internships
+            </div>
+            <div class="edu-pill">
+              🎓 BSc Cyber Forensics (2023–2026)
+            </div>
+            <div class="edu-pill">
+              📍 Thrissur, Kerala
+            </div>
+          </div>
+
+          <h1 class="hero-title-main">
+            Investigating Security & <br>
+            <span class="hero-gradient-text">Digital Forensics.</span>
+          </h1>
+
+          <div class="hero-subtitle-role">
+            Aiswarya K S <span class="highlight">—</span> Junior Cybersecurity Student
+          </div>
+
+          <p class="hero-bio">
+            Passionate about digital evidence analysis, network packet forensics, memory extraction,
+            and defensive security operations. Learning through structured labs, CTF challenges,
+            and coursework at <strong>Mahatma Gandhi University</strong>.
+          </p>
+
+          <div class="hero-chips-bar" aria-label="Key Competencies">
+            <span class="chip" style="border-color:var(--accent-cyan); color:var(--text-main);">⚡ Flagship: webpent (AppSec Scanner)</span>
+            <span class="chip">🔍 Volatility & Memory Forensics</span>
+            <span class="chip">📡 Wireshark & PCAP Analysis</span>
+            <span class="chip">🐧 Linux CLI & Bash</span>
+            <span class="chip">🛡️ SOC & Suricata Monitoring</span>
+            <span class="chip">🐍 Python Security Scripts</span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              Explore Projects
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <a href="#tryhackme" class="btn btn-outline">
+              TryHackMe Showcase
+            </a>
+            <a href="https://github.com/AiswaryaKS-aysho" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              GitHub ↗
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Get in Touch
+            </a>
+          </div>
+
+          <div class="hero-quick-metrics">
+            <div class="metric-item">
+              <span class="metric-number">2023–26</span>
+              <span class="metric-label">BSc Cyber Forensics · MGU</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">@aiswaryaks325</span>
+              <span class="metric-label">TryHackMe Profile</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">Hands-On</span>
+              <span class="metric-label">PCAP, RAM & Disk Triage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Cyber Station (Alejandra Editorial Bento Style) -->
+        <div class="cyber-station-card">
+          <div class="station-header">
+            <div class="station-dots">
+              <span class="station-dot dot-red"></span>
+              <span class="station-dot dot-amber"></span>
+              <span class="station-dot dot-green"></span>
+            </div>
+            <div class="station-tabs" role="tablist">
+              <button class="station-tab-btn active" data-tab="term" role="tab" aria-selected="true">> Terminal</button>
+              <button class="station-tab-btn" data-tab="thm" role="tab" aria-selected="false">🛡️ TryHackMe</button>
+              <button class="station-tab-btn" data-tab="triage" role="tab" aria-selected="false">🔍 Quick Triage</button>
+            </div>
+          </div>
+
+          <div class="station-content-pane">
+            
+            <!-- Tab 1: Interactive Terminal -->
+            <div class="terminal-pane station-tab-content active" id="stationTab-term">
+              <div class="terminal-logs" id="heroTerminalLogs">
+                <div class="term-line">
+                  <div class="term-cmd">whoami</div>
+                  <div class="term-out">aiswarya-k-s — BSc Cyber Forensics Student</div>
+                </div>
+                <div class="term-line">
+                  <div class="term-cmd">cat /etc/university</div>
+                  <div class="term-out">Mahatma Gandhi University (2023–2026), Thrissur, Kerala</div>
+                </div>
+                <div class="term-line">
+                  <div class="term-cmd">thm --profile</div>
+                  <div class="term-out highlight">User: aiswaryaks325 | Focus: Forensics, SOC, Linux, Networking</div>
+                </div>
+                <div class="term-line">
+                  <div class="term-cmd">forensics --status</div>
+                  <div class="term-out">Tools: Autopsy, Volatility 3, Wireshark, FTK Imager, ExifTool</div>
+                </div>
+              </div>
+
+              <div class="term-input-row">
+                <span class="term-prompt">aiswarya@forensics:~$</span>
+                <input type="text" class="term-input" id="heroTermInput" placeholder="Type 'help', 'skills', 'thm', or 'clear'..." autocomplete="off" spellcheck="false">
+              </div>
+
+              <div class="term-quick-btns">
+                <span style="font-size:0.7rem; color:var(--text-dim); margin-right:4px;">Quick Run:</span>
+                <button class="term-qbtn" data-cmd="webpent" style="color:var(--accent-cyan); border-color:var(--border-highlight);">webpent</button>
+                <button class="term-qbtn" data-cmd="help">help</button>
+                <button class="term-qbtn" data-cmd="thm">thm</button>
+                <button class="term-qbtn" data-cmd="skills">skills</button>
+                <button class="term-qbtn" data-cmd="contact">contact</button>
+                <button class="term-qbtn" data-cmd="clear">clear</button>
+              </div>
+            </div>
+
+            <!-- Tab 2: TryHackMe Live Card Preview -->
+            <div class="thm-pane station-tab-content" id="stationTab-thm" style="display:none;">
+              <div class="thm-hero-card">
+                <div class="thm-profile-header">
+                  <div class="thm-avatar-group">
+                    <div class="thm-icon-box">THM</div>
+                    <div class="thm-user-info">
+                      <h4>aiswaryaks325</h4>
+                      <span>tryhackme.com/p/aiswaryaks325</span>
+                    </div>
+                  </div>
+                  <span class="thm-badge-verified">Active Learner</span>
+                </div>
+
+                <div class="thm-stat-grid">
+                  <div class="thm-stat-cell">
+                    <div class="thm-stat-val">Forensics</div>
+                    <div class="thm-stat-desc">Primary Study Path</div>
+                  </div>
+                  <div class="thm-stat-cell">
+                    <div class="thm-stat-val">Networking</div>
+                    <div class="thm-stat-desc">PCAP & TCP/IP Labs</div>
+                  </div>
+                  <div class="thm-stat-cell">
+                    <div class="thm-stat-val">Linux CLI</div>
+                    <div class="thm-stat-desc">Permissions & Shell</div>
+                  </div>
+                  <div class="thm-stat-cell">
+                    <div class="thm-stat-val">SOC Triage</div>
+                    <div class="thm-stat-desc">Log & Incident Response</div>
+                  </div>
+                </div>
+
+                <a href="https://tryhackme.com/p/aiswaryaks325" target="_blank" rel="noopener noreferrer" class="btn-thm-live" style="width:100%; margin-top:0.5rem;">
+                  Open Live TryHackMe Profile ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Tab 3: Forensics Quick Triage -->
+            <div class="forensics-pane station-tab-content" id="stationTab-triage" style="display:none;">
+              <div class="triage-step">
+                <div class="triage-step-title">
+                  <span>1. Volatility RAM Triage</span>
+                  <span style="color:var(--accent-emerald);">VERIFIED</span>
+                </div>
+                <div class="triage-step-body">
+                  Dump: Windows_10_x64.raw — isolated suspicious svchost.exe PID 4120 spawned by cmd.exe.
+                </div>
+              </div>
+
+              <div class="triage-step alert">
+                <div class="triage-step-title">
+                  <span>2. Wireshark PCAP Stream</span>
+                  <span style="color:var(--accent-rose);">DNS EXFIL</span>
+                </div>
+                <div class="triage-step-body">
+                  Encoded subdomains detected: base64 chunks queried to rogue nameserver on port 53.
+                </div>
+              </div>
+
+              <div class="triage-step">
+                <div class="triage-step-title">
+                  <span>3. Hash Verification</span>
+                  <span style="color:var(--accent-cyan);">SHA-256</span>
+                </div>
+                <div class="triage-step-body">
+                  Chain of custody preserved: original evidence image hash matches forensic working copy.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════ ABOUT SECTION ═══════════════════════════ -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="section-header-block">
+        <span class="section-tag">01 // Academic & Profile</span>
+        <h2 class="section-heading">About Aiswarya K S</h2>
+        <p class="section-lead">
+          Building a strong foundation in digital forensics, cyber investigation, and security operations.
+        </p>
+      </div>
+
+      <div class="education-bento">
+        <div class="edu-main-info">
+          <span class="edu-badge">Academic Pursuit</span>
+          <h3 class="edu-degree">BSc Cyber Forensics</h3>
+          <p class="edu-university">Mahatma Gandhi University (MGU)</p>
+          
+          <div class="edu-meta-row">
+            <span>📅 2023 – 2026 (Ongoing)</span>
+            <span>📍 Thrissur, Kerala, India</span>
+          </div>
+
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-top: 0.5rem;">
+            My academic focus revolves around understanding how digital crimes are investigated and how
+            systems defend themselves. From recovering hidden artifacts in file systems to analyzing network
+            traffic during simulated incidents, I focus on the methodical, evidence-first mindset required
+            for cyber forensics and defensive security.
+          </p>
+        </div>
+
+        <div class="edu-coursework-box">
+          <h4>Core Coursework & Specialized Topics</h4>
+          <div class="coursework-chips">
+            <span class="course-chip">🔍 Digital Forensics & Investigation</span>
+            <span class="course-chip">💾 Operating Systems & File Systems</span>
+            <span class="course-chip">🌐 Computer Networks & Protocols</span>
+            <span class="course-chip">🔐 Cryptography & Hash Functions</span>
+            <span class="course-chip">⚖️ Cyber Law & Forensic Ethics</span>
+            <span class="course-chip">🛡️ Information Security Fundamentals</span>
+            <span class="course-chip">🐧 Linux System Administration</span>
+            <span class="course-chip">🐍 Python for Security Automation</span>
+          </div>
+
+          <div style="margin-top: 1.5rem; padding: 1rem; background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div style="font-family: var(--font-heading); font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.35rem;">
+              🎯 Current Learning Milestone
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              Actively preparing for Junior SOC Analyst & Incident Response roles through TryHackMe rooms,
+              Wireshark packet challenges, and hands-on laboratory exercises.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ TRYHACKME DEDICATED HUB ═══════════════════════════ -->
+  <section id="tryhackme" class="section thm-showcase-section">
+    <div class="container">
+      <div class="section-header-block">
+        <span class="section-tag" style="color:#ff3366;">02 // Practical Labs & Continuous Learning</span>
+        <h2 class="section-heading">TryHackMe Showcase</h2>
+        <p class="section-lead">
+          Real hands-on exercises completed on TryHackMe, documenting practical experience across forensics,
+          networking, Linux fundamentals, and security analysis.
+        </p>
+      </div>
+
+      <div class="thm-hub-grid">
+        
+        <!-- Sticky THM Profile Card -->
+        <aside class="thm-profile-card">
+          <div class="thm-profile-hero">
+            <span class="thm-brand-pill">TRYHACKME LEARNER</span>
+            <div class="thm-avatar-circle">AKS</div>
+            <h3 class="thm-username">aiswaryaks325</h3>
+            <p class="thm-user-degree">BSc Cyber Forensics Student</p>
+            <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-dim);">Thrissur, India</span>
+          </div>
+
+          <div class="thm-actions-col">
+            <a href="https://tryhackme.com/p/aiswaryaks325" target="_blank" rel="noopener noreferrer" class="btn-thm-live">
+              Visit Live THM Profile ↗
+            </a>
+            <button class="btn btn-outline" id="btnCopyThmLink" style="width:100%; font-size:0.8rem; padding:0.6rem;">
+              📋 Copy Profile Link
+            </button>
+          </div>
+
+          <div style="border-top:1px solid var(--border-subtle); padding-top:1rem;">
+            <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-dim); text-transform:uppercase;">Primary Learning Tracks:</span>
+            <ul style="list-style:none; margin-top:0.5rem; display:flex; flex-direction:column; gap:0.4rem; font-size:0.82rem; color:var(--text-muted);">
+              <li>🔹 Digital Forensics & Incident Response</li>
+              <li>🔹 Pre-Security & Networking</li>
+              <li>🔹 Linux CLI & Fundamentals</li>
+              <li>🔹 SOC Level 1 Incident Triage</li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Right: Filterable Rooms & Skills Log -->
+        <div class="thm-rooms-container">
+          
+          <div class="thm-filter-bar">
+            <button class="filter-pill active" data-thm-filter="all">All Rooms</button>
+            <button class="filter-pill" data-thm-filter="forensics">Digital Forensics</button>
+            <button class="filter-pill" data-thm-filter="networking">Networking & Wireshark</button>
+            <button class="filter-pill" data-thm-filter="linux">Linux & Systems</button>
+            <button class="filter-pill" data-thm-filter="soc">SOC & Triage</button>
+          </div>
+
+          <div class="thm-rooms-grid">
+            
+            <!-- Room 1 -->
+            <article class="thm-room-card" data-category="forensics">
+              <div class="room-badge-row">
+                <span class="room-category">Digital Forensics</span>
+                <span class="room-difficulty diff-info">Hands-On</span>
+              </div>
+              <h3 class="room-title">Autopsy: Forensic Disk Analysis</h3>
+              <p class="room-description">
+                Creating investigative cases, ingesting raw disk images, parsing timeline metadata,
+                recovering deleted documents, and extracting EXIF data from suspect storage media.
+              </p>
+              <div class="room-skills-tags">
+                <span class="room-tag">Autopsy</span>
+                <span class="room-tag">Disk Carving</span>
+                <span class="room-tag">Timeline Triage</span>
+              </div>
+            </article>
+
+            <!-- Room 2 -->
+            <article class="thm-room-card" data-category="networking">
+              <div class="room-badge-row">
+                <span class="room-category">Network Forensics</span>
+                <span class="room-difficulty diff-easy">Core Skills</span>
+              </div>
+              <h3 class="room-title">Wireshark: Packet Analysis & PCAP Triage</h3>
+              <p class="room-description">
+                Filtering TCP/UDP/DNS packets, following HTTP and TCP streams, identifying anomalous
+                ports, and reconstructing cleartext credentials transferred over insecure protocols.
+              </p>
+              <div class="room-skills-tags">
+                <span class="room-tag">Wireshark</span>
+                <span class="room-tag">PCAP</span>
+                <span class="room-tag">Display Filters</span>
+              </div>
+            </article>
+
+            <!-- Room 3 -->
+            <article class="thm-room-card" data-category="forensics">
+              <div class="room-badge-row">
+                <span class="room-category">Digital Forensics</span>
+                <span class="room-difficulty diff-medium">Investigation</span>
+              </div>
+              <h3 class="room-title">Volatility 3: Memory Dump Analysis</h3>
+              <p class="room-description">
+                Extracting volatility profiles from RAM snapshots, isolating rogue processes with pslist
+                and pstree, auditing injected DLLs, and inspecting network sockets.
+              </p>
+              <div class="room-skills-tags">
+                <span class="room-tag">Volatility 3</span>
+                <span class="room-tag">RAM Forensics</span>
+                <span class="room-tag">Process Tree</span>
+              </div>
+            </article>
+
+            <!-- Room 4 -->
+            <article class="thm-room-card" data-category="linux">
+              <div class="room-badge-row">
+                <span class="room-category">Linux Administration</span>
+                <span class="room-difficulty diff-easy">Fundamentals</span>
+              </div>
+              <h3 class="room-title">Linux Fundamentals & Security CLI</h3>
+              <p class="room-description">
+                POSIX permission models (chmod, chown), file navigation, grep/sed log filtering, process
+                monitoring (ps, top), user management, and system auditing.
+              </p>
+              <div class="room-skills-tags">
+                <span class="room-tag">Bash</span>
+                <span class="room-tag">Permissions</span>
+                <span class="room-tag">Grep/Awk</span>
+              </div>
+            </article>
+
+            <!-- Room 5 -->
+            <article class="thm-room-card" data-category="soc">
+              <div class="room-badge-row">
+                <span class="room-category">SOC Operations</span>
+                <span class="room-difficulty diff-medium">Defensive</span>
+              </div>
+              <h3 class="room-title">Incident Handling & Log Triage</h3>
+              <p class="room-description">
+                Investigating authentication anomalies in /var/log/auth.log, detecting repeated SSH brute-force
+                attempts, correlating IP addresses with threat intelligence feeds.
+              </p>
+              <div class="room-skills-tags">
+                <span class="room-tag">Syslog</span>
+                <span class="room-tag">Auth.log</span>
+                <span class="room-tag">Brute Force Triage</span>
+              </div>
+            </article>
+
+            <!-- Room 6 -->
+            <article class="thm-room-card" data-category="networking">
+              <div class="room-badge-row">
+                <span class="room-category">Network Security</span>
+                <span class="room-difficulty diff-easy">Scanning</span>
+              </div>
+              <h3 class="room-title">Nmap: Network Scanning & Reconnaissance</h3>
+              <p class="room-description">
+                Conducting SYN stealth scans, version detection, NSE scripting engine checks, and mapping
+                open ports across target subnet ranges without triggering denial of service.
+              </p>
+              <div class="room-skills-tags">
+                <span class="room-tag">Nmap</span>
+                <span class="room-tag">Port Scanning</span>
+                <span class="room-tag">NSE Scripts</span>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ INTERACTIVE FORENSICS WORKBENCH ═══════════════════════════ -->
+  <section id="forensics-lab" class="section">
+    <div class="container">
+      <div class="section-header-block">
+        <span class="section-tag">03 // Interactive Simulation</span>
+        <h2 class="section-heading">Forensics Lab Workbench</h2>
+        <p class="section-lead">
+          Interact with simulated forensic investigations to see how digital evidence is parsed, verified,
+          and triaged step-by-step.
+        </p>
+      </div>
+
+      <div class="forensic-workbench">
+        <div class="wb-tabs-header" role="tablist">
+          <button class="wb-tab-btn active" data-wb="memory" role="tab" aria-selected="true">💾 Memory Forensics (Volatility)</button>
+          <button class="wb-tab-btn" data-wb="pcap" role="tab" aria-selected="false">📡 Packet Triage (Wireshark)</button>
+          <button class="wb-tab-btn" data-wb="hash" role="tab" aria-selected="false">🔐 Evidence Hash & Chain of Custody</button>
+          <button class="wb-tab-btn" data-wb="logs" role="tab" aria-selected="false">📋 Auth Log Investigation</button>
+        </div>
+
+        <div class="wb-content-body">
+          
+          <!-- Panel 1: Memory Forensics -->
+          <div class="wb-panel active" id="wbPanel-memory">
+            <div class="wb-action-bar">
+              <div class="wb-panel-title">
+                <span>Investigating RAM Snapshot:</span>
+                <code style="color:var(--accent-cyan);">incident_case_042.raw</code>
+              </div>
+              <div style="display:flex; gap:0.5rem;">
+                <button class="wb-btn-run" data-action="run-pslist">Run windows.pslist</button>
+                <button class="wb-btn-run" data-action="run-netscan" style="background:var(--accent-violet);">Run windows.netscan</button>
+              </div>
+            </div>
+            <pre class="wb-terminal-output" id="wbOutput-memory">Volatility 3 Framework 2.4.1
+PID    PPID   ImageFileName       Offset(V)          Threads  Handles  SessionId  Wow64
+4      0      System              0xfa8001a14040     118      528      N/A        False
+392    4      smss.exe            0xfa80029b3060     2        32       N/A        False
+512    504    csrss.exe           0xfa8003180b00     11       640      0          False
+620    504    wininit.exe         0xfa80032cb060     3        82       0          False
+688    620    services.exe        0xfa80032f3060     9        214      0          False
+704    620    lsass.exe           0xfa80032fb060     7        581      0          False
+1048   688    svchost.exe         0xfa8003884b00     14       312      0          False
+[!] 4120   1048   cmd.exe             0xfa8004b77060     1        24       0          False  <-- SUSPICIOUS CHILD
+[!] 4288   4120   powershell.exe      0xfa8004ce9b00     8        190      0          False  <-- SPAWNED BY CMD</pre>
+          </div>
+
+          <!-- Panel 2: Packet Triage -->
+          <div class="wb-panel" id="wbPanel-pcap">
+            <div class="wb-action-bar">
+              <div class="wb-panel-title">
+                <span>Wireshark PCAP Filter:</span>
+                <code style="color:var(--accent-cyan);">dns.qry.name contains "corp" || tcp.flags.syn == 1</code>
+              </div>
+              <button class="wb-btn-run" data-action="analyze-pcap">Filter Anomalies</button>
+            </div>
+            <pre class="wb-terminal-output" id="wbOutput-pcap">No.   Time       Source           Destination      Protocol  Length  Info
+1     0.000000   192.168.1.105    192.168.1.1      DNS       78      Standard query 0x1a2b A auth.corp-network.local
+2     0.004120   192.168.1.1      192.168.1.105    DNS       94      Standard query response 0x1a2b A 192.168.1.200
+3     0.021000   192.168.1.105    192.168.1.200    TCP       74      51824 → 443 [SYN] Seq=0 Win=64240 Len=0 MSS=1460
+4     0.023410   192.168.1.200    192.168.1.105    TCP       74      443 → 51824 [SYN, ACK] Seq=0 Ack=1 Win=65535
+5     0.023490   192.168.1.105    192.168.1.200    TCP       66      51824 → 443 [ACK] Seq=1 Ack=1 Win=64240
+[!] 14  0.891200   192.168.1.105    198.51.100.44    DNS       128     Query: Zm9yZW5zaWNzX2RhdGE.exfil-dns.xyz [High Entropy Base64]</pre>
+          </div>
+
+          <!-- Panel 3: Evidence Hash -->
+          <div class="wb-panel" id="wbPanel-hash">
+            <div class="wb-action-bar">
+              <div class="wb-panel-title">
+                <span>Chain of Custody Verifier:</span>
+                <code style="color:var(--accent-cyan);">evidence_usb_image.dd</code>
+              </div>
+              <button class="wb-btn-run" data-action="verify-hash">Compute SHA-256 Checksum</button>
+            </div>
+            <pre class="wb-terminal-output" id="wbOutput-hash">[*] Acquisition Time: 2026-10-12 14:30:00 UTC
+[*] Examiner: Aiswarya K S (BSc Cyber Forensics, MGU)
+[*] Master Image SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[*] Forensic Copy SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[✓] INTEGRITY STATUS: MATCH VERIFIED. Evidence is unaltered and admissible for forensic analysis.</pre>
+          </div>
+
+          <!-- Panel 4: Auth Log Investigation -->
+          <div class="wb-panel" id="wbPanel-logs">
+            <div class="wb-action-bar">
+              <div class="wb-panel-title">
+                <span>Parsing Linux Authentication Log:</span>
+                <code style="color:var(--accent-cyan);">/var/log/auth.log</code>
+              </div>
+              <button class="wb-btn-run" data-action="filter-failed-ssh">Grep Failed Passwords</button>
+            </div>
+            <pre class="wb-terminal-output" id="wbOutput-logs">Oct 13 03:12:01 debian-srv sshd[1420]: Failed password for invalid user admin from 203.0.113.88 port 48212 ssh2
+Oct 13 03:12:04 debian-srv sshd[1422]: Failed password for invalid user root from 203.0.113.88 port 48214 ssh2
+Oct 13 03:12:07 debian-srv sshd[1425]: Failed password for invalid user oracle from 203.0.113.88 port 48218 ssh2
+Oct 13 03:12:10 debian-srv sshd[1429]: Failed password for invalid user test from 203.0.113.88 port 48220 ssh2
+[!] DETECTION: Rapid SSH authentication failures detected from 203.0.113.88 (Dictionary Attack Signature).
+[✓] ACTION: IP added to iptables DROP rule and reported to firewall logs.</pre>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PROJECTS SECTION ═══════════════════════════ -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header-block">
+        <span class="section-tag">04 // Practical Implementations</span>
+        <h2 class="section-heading">Featured Projects</h2>
+        <p class="section-lead">
+          Hands-on security tools and forensic scripts built during coursework and independent lab research.
+        </p>
+      </div>
+
+      <div class="projects-bento-grid">
+        
+        <!-- Project 1: webpent (Flagship) -->
+        <article class="project-card" style="border-color: var(--border-highlight); box-shadow: var(--shadow-glow);">
+          <div class="project-header-row">
+            <span class="project-cat-pill" style="color:var(--accent-cyan); font-weight:700;">⭐ FLAGSHIP APPSEC TOOL</span>
+            <span class="project-status-tag" style="background:rgba(0, 229, 255, 0.15); color:var(--accent-cyan);">Python CLI · Active</span>
+          </div>
+          <h3 class="project-card-title">webpent — Web App Pentest & Vulnerability Scanner</h3>
+          <p class="project-card-desc">
+            A modular web application pentest helper and vulnerability probing engine. Automatically audits URL parameters and HTTP response headers for critical vulnerabilities with structured JSON & Markdown report generation and Burp Suite proxy routing.
+          </p>
+          <div class="project-forensic-box">
+            <strong>Detection Probes Engine:</strong>
+            • <strong>Reflected XSS:</strong> Injected canary payload reflection detection<br>
+            • <strong>SQL Injection:</strong> Database error parsing & boolean TRUE/FALSE content divergence<br>
+            • <strong>SSRF:</strong> Parameter canary callback, cloud metadata (169.254.169.254), & loopback bypasses<br>
+            • <strong>Open Redirect:</strong> 3xx Location header validation against attacker domains<br>
+            • <strong>Security Headers:</strong> HSTS, CSP, X-Frame-Options, nosniff, cookie flags, server disclosure
+          </div>
+          <div class="project-tech-pills">
+            <span class="tech-pill">Python 3</span>
+            <span class="tech-pill">Requests Session</span>
+            <span class="tech-pill">Burp Proxy Integration</span>
+            <span class="tech-pill">JSON / Markdown Reports</span>
+            <span class="tech-pill">Rate Limiting</span>
+            <span class="tech-pill">CI/CD Ready</span>
+          </div>
+          <div class="project-card-actions">
+            <a href="https://github.com/AiswaryaKS-aysho/webpent" target="_blank" rel="noopener noreferrer" class="project-action-link" style="font-weight:700;">
+              View on GitHub ↗
+            </a>
+            <span style="font-size:0.75rem; font-family:var(--font-mono); color:var(--text-dim); margin-left:auto;">
+              python -m webpent
+            </span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-header-row">
+            <span class="project-cat-pill">Digital Forensics</span>
+            <span class="project-status-tag">Evidence Integrity</span>
+          </div>
+          <h3 class="project-card-title">Evidence Hash & Chain of Custody Verifier</h3>
+          <p class="project-card-desc">
+            Automated forensic hashing utility that computes cryptographic hashes (MD5, SHA-1, SHA-256)
+            for raw forensic disk images (.dd/.raw) and records immutable acquisition metadata.
+          </p>
+          <div class="project-forensic-box">
+            <strong>Forensics Application:</strong>
+            Ensures adherence to ISO/IEC 27037 standards for digital evidence handling and courtroom admissibility.
+          </div>
+          <div class="project-tech-pills">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Hashlib</span>
+            <span class="tech-pill">Evidence Handling</span>
+            <span class="tech-pill">CLI</span>
+          </div>
+          <div class="project-card-actions">
+            <a href="https://github.com/AiswaryaKS-aysho" target="_blank" rel="noopener noreferrer" class="project-action-link">
+              GitHub Repo ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-header-row">
+            <span class="project-cat-pill">Memory Analysis</span>
+            <span class="project-status-tag">Volatility 3</span>
+          </div>
+          <h3 class="project-card-title">Memory Dump Malware Triage Lab</h3>
+          <p class="project-card-desc">
+            Structured forensic analysis of infected Windows memory captures. Extracted anomalous DLLs,
+            inspected network connections from hidden sockets, and dumped injected shellcode for hash matching.
+          </p>
+          <div class="project-forensic-box">
+            <strong>Forensics Application:</strong>
+            Detects in-memory malware that evades traditional disk-based antivirus scans.
+          </div>
+          <div class="project-tech-pills">
+            <span class="tech-pill">Volatility 3</span>
+            <span class="tech-pill">Windows Internals</span>
+            <span class="tech-pill">Malware Triage</span>
+          </div>
+          <div class="project-card-actions">
+            <a href="https://github.com/AiswaryaKS-aysho" target="_blank" rel="noopener noreferrer" class="project-action-link">
+              GitHub Repo ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-header-row">
+            <span class="project-cat-pill">Web Security</span>
+            <span class="project-status-tag">Educational Scanner</span>
+          </div>
+          <h3 class="project-card-title">Web Application Security Header & Vulnerability Auditor</h3>
+          <p class="project-card-desc">
+            Python script auditing target HTTP responses for critical security headers (CSP, HSTS,
+            X-Frame-Options) and testing simulated reflected input handling on local lab environments.
+          </p>
+          <div class="project-forensic-box">
+            <strong>Security Relevance:</strong>
+            Assesses defense-in-depth posture against clickjacking, MIME sniffing, and unencrypted traffic.
+          </div>
+          <div class="project-tech-pills">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Requests</span>
+            <span class="tech-pill">OWASP Top 10</span>
+          </div>
+          <div class="project-card-actions">
+            <a href="https://github.com/AiswaryaKS-aysho" target="_blank" rel="noopener noreferrer" class="project-action-link">
+              GitHub Repo ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card">
+          <div class="project-header-row">
+            <span class="project-cat-pill">SOC & Monitoring</span>
+            <span class="project-status-tag">Suricata / Snort</span>
+          </div>
+          <h3 class="project-card-title">Home Lab NIDS Rule Writing & Alert Triage</h3>
+          <p class="project-card-desc">
+            Configured an open-source Network Intrusion Detection System (NIDS) inside a virtualized
+            homelab to monitor internal traffic and trigger alerts on unauthorized ICMP tunnels and port sweeps.
+          </p>
+          <div class="project-forensic-box">
+            <strong>SOC Relevance:</strong>
+            Wrote custom Snort/Suricata rules to differentiate benign user activity from port scan reconnaissance.
+          </div>
+          <div class="project-tech-pills">
+            <span class="tech-pill">Suricata</span>
+            <span class="tech-pill">Snort</span>
+            <span class="tech-pill">IDS Rules</span>
+            <span class="tech-pill">VirtualBox</span>
+          </div>
+          <div class="project-card-actions">
+            <a href="https://github.com/AiswaryaKS-aysho" target="_blank" rel="noopener noreferrer" class="project-action-link">
+              GitHub Repo ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card">
+          <div class="project-header-row">
+            <span class="project-cat-pill">Forensics & Steganography</span>
+            <span class="project-status-tag">Metadata Carving</span>
+          </div>
+          <h3 class="project-card-title">Image Forensics & Hidden Data Extraction</h3>
+          <p class="project-card-desc">
+            Investigating covert data exfiltration using Steghide, binwalk, and ExifTool. Analyzed
+            tampered image files for hidden payloads, LSB anomalies, and GPS geolocation metadata.
+          </p>
+          <div class="project-forensic-box">
+            <strong>Forensics Application:</strong>
+            Detects insider-threat data exfiltration hidden inside harmless JPEG and PNG media assets.
+          </div>
+          <div class="project-tech-pills">
+            <span class="tech-pill">Steghide</span>
+            <span class="tech-pill">ExifTool</span>
+            <span class="tech-pill">Binwalk</span>
+          </div>
+          <div class="project-card-actions">
+            <a href="https://github.com/AiswaryaKS-aysho" target="_blank" rel="noopener noreferrer" class="project-action-link">
+              GitHub Repo ↗
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SKILLS SECTION ═══════════════════════════ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header-block">
+        <span class="section-tag">05 // Technical Proficiency</span>
+        <h2 class="section-heading">Skills & Tool Matrix</h2>
+        <p class="section-lead">
+          Technical competencies developed through university coursework, lab setups, and CTF challenges.
+        </p>
+      </div>
+
+      <div class="skills-matrix-grid">
+        
+        <!-- Category 1 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-icon-avatar">🔍</div>
+            <h3>Digital Forensics</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info-row">
+                <span class="skill-name">Volatility 3 (RAM Analysis)</span>
+                <span class="skill-level-text">Proficient</span>
+              </div>
+              <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 82%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info-row">
+                <span class="skill-name">Autopsy & FTK Imager</span>
+                <span class="skill-level-text">Proficient</span>
+              </div>
+              <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info-row">
+                <span class="skill-name">Evidence Chain of Custody</span>
+                <span class="skill-level-text">Academic & Practical</span>
+              </div>
+              <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info-row">
+                <span class="skill-name">Steganography & EXIF Analysis</span>
+                <span class="skill-level-text">Hands-On</span>
+              </div>
+              <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 80%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-icon-avatar">📡</div>
+            <h3>Network & Defense</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info-row">
+                <span class="skill-name">Wireshark & PCAP Triage</span>
+                <span class="skill-level-text">Proficient</span>
+              </div>
+              <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info-row">
+                <span class="skill-name">TCP/IP, DNS, HTTP Protocols</span>
+                <span class="skill-level-text">Strong Fundamentals</span>
+              </div>
+              <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info-row">
+                <span class="skill-name">Nmap Port Scanning</span>
+                <span class="skill-level-text">Hands-On</span>
+              </div>
+              <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 78%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info-row">
+                <span class="skill-name">Snort / Suricata IDS Basics</span>
+                <span class="skill-level-text">Lab Practice</span>
+              </div>
+              <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 70%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-icon-avatar">🐧</div>
+            <h3>Systems & Scripting</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info-row">
+                <span class="skill-name">Linux Administration (Debian/Ubuntu)</span>
+                <span class="skill-level-text">Proficient</span>
+              </div>
+              <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info-row">
+                <span class="skill-name">Python 3 (Security Scripts)</span>
+                <span class="skill-level-text">Intermediate</span>
+              </div>
+              <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 76%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info-row">
+                <span class="skill-name">Bash Shell Scripting</span>
+                <span class="skill-level-text">Intermediate</span>
+              </div>
+              <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 74%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info-row">
+                <span class="skill-name">Git & Version Control</span>
+                <span class="skill-level-text">Proficient</span>
+              </div>
+              <div class="skill-progress-track"><div class="skill-progress-bar" style="width: 80%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ EDUCATION SECTION ═══════════════════════════ -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header-block">
+        <span class="section-tag">06 // Academic Foundation</span>
+        <h2 class="section-heading">Education</h2>
+      </div>
+
+      <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+        <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 0.5rem;">
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--text-main);">
+              Bachelor of Science in Cyber Forensics
+            </h3>
+            <p style="color: var(--accent-cyan); font-weight: 600; font-size: 1.1rem; margin-top: 0.2rem;">
+              Mahatma Gandhi University (MGU)
+            </p>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-dim); background: var(--bg-secondary); padding: 0.4rem 0.85rem; border-radius: var(--radius-full);">
+            2023 – 2026 (In Progress)
+          </div>
+        </div>
+
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+          Location: <strong>Thrissur, Kerala, India</strong>. Comprehensive undergraduate curriculum covering
+          the technical, legal, and operational aspects of digital evidence recovery, incident response,
+          network defense, cryptography, and cyber jurisprudence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT SECTION ═══════════════════════════ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header-block">
+        <span class="section-tag">07 // Connect</span>
+        <h2 class="section-heading">Get In Touch</h2>
+        <p class="section-lead">
+          Interested in discussing internship opportunities, cyber forensics research, or CTF collaborations?
+          Feel free to reach out.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Left: Contact Details -->
+        <div class="contact-info-col">
+          
+          <div class="contact-card-box">
+            <div class="contact-icon-box">📍</div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Thrissur, Kerala, India</p>
+            </div>
+          </div>
+
+          <a href="https://www.linkedin.com/in/aiswarya-k-s-" target="_blank" rel="noopener noreferrer" class="contact-card-box">
+            <div class="contact-icon-box">💼</div>
+            <div class="contact-details">
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/aiswarya-k-s- ↗</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/AiswaryaKS-aysho" target="_blank" rel="noopener noreferrer" class="contact-card-box">
+            <div class="contact-icon-box">🐙</div>
+            <div class="contact-details">
+              <h4>GitHub</h4>
+              <p>github.com/AiswaryaKS-aysho ↗</p>
+            </div>
+          </a>
+
+          <a href="https://tryhackme.com/p/aiswaryaks325" target="_blank" rel="noopener noreferrer" class="contact-card-box">
+            <div class="contact-icon-box" style="color:#ff3366;">🔥</div>
+            <div class="contact-details">
+              <h4>TryHackMe</h4>
+              <p>tryhackme.com/p/aiswaryaks325 ↗</p>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Right: Interactive Contact Form -->
+        <div class="contact-form-card">
+          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--text-main);">
+            Send a Direct Message
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">
+            Leave a message or email inquiry below.
+          </p>
+
+          <form id="contactForm" onsubmit="event.preventDefault(); window.handleContactSubmit();">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Your Name</label>
+              <input type="text" id="contactName" class="form-input" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="form-group" style="margin-top: 1rem;">
+              <label for="contactEmail" class="form-label">Your Email</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="alex@example.com" required>
+            </div>
+
+            <div class="form-group" style="margin-top: 1rem;">
+              <label for="contactMessage" class="form-label">Message</label>
+              <textarea id="contactMessage" class="form-textarea" placeholder="Hi Aiswarya, I saw your cyber forensics portfolio..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 1.25rem; width: 100%;">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        © <span id="footerYear">2026</span> Aiswarya K S · BSc Cyber Forensics (Mahatma Gandhi University)
+      </div>
+      <div class="footer-links">
+        <a href="https://tryhackme.com/p/aiswaryaks325" target="_blank" rel="noopener noreferrer" class="footer-link">TryHackMe</a>
+        <a href="https://github.com/AiswaryaKS-aysho" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/aiswarya-k-s-" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="#hero" class="footer-link">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
