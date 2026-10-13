@@ -155,7 +155,7 @@ Checks:
   • API9 Inven.  : Deprecated endpoints & unversioned paths
 Usage:
   python -m apisec sample_spec.json --md audit.md --fail-on high
-Repo: https://github.com/AiswaryaKS-aysho/apisec-audit`,
+Repo: https://github.com/AiswaryaKS-aysho/api-security`,
 
     webpent: () => `[+] Tool: webpent (Web App Pentest & Vulnerability Scanner)
 Author: Aiswarya K S
